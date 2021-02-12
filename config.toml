@@ -1,0 +1,4 @@
+baseURL = "http://danielsales.com.br/"
+languageCode = "pt-br"
+title = "My New Hugo Site"
+theme = "zzo"
