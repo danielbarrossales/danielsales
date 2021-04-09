@@ -49,7 +49,7 @@ talksGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
 myname = "Daniel B. Sales"
 email = "daniel.b.sales@outlook.com"
-whoami = "Software Developer"
+whoami = ""#"Software Developer"
 authorImage = "/images/bio.jpeg"
 bioImageUrl = "/images/bio.jpeg" # image url like "http//..." or "images/anyfoldername/mybioimage.jpg" If not set, we find a avatar image in root/static/images/whoami/avatar.(png|jpg|svg)
 useGravatar = false # we use this option highest priority
