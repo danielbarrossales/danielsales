@@ -1,5 +1,5 @@
 ---
-title: "Installando Arch Linux com Btrfs"
+title: "Instalando Arch Linux com Btrfs"
 
 date: 2021-04-08T11:46:29-03:00
 url: instalacao-arch-linux-com-btrfs/
@@ -70,14 +70,14 @@ umount /mnt # Desmonta a partição para podermos utilizar os subvolumes que aca
 Agora precisamos montar os subvolumes:
 
 {{< highlight bash >}}
-mount -o defaults,noatime,compress=zstd:2,subvol=@root /mnt # Monta a raiz do sistema
+mount -o defaults,noatime,compress=zstd:2,subvol=@root /dev/sda2 /mnt # Monta a raiz do sistema
 # Se o sistema não for efi mude boot/efi,... para boot...
 mkdir -p /mnt/{boot/efi,var,home,tmp,.snapshots,.swap} # Cria todos os diretórios especificados recursivament
-mount -o defaults,noatime,compress=zstd:2,subvol=@home /mnt/home # Monta a pasta do usuário
-mount -o defaults,noatime,compress=zstd:2,subvol=@var /mnt/var
-mount -o defaults,noatime,compress=zstd:2,subvol=@tmp /mnt/tmp
-mount -o defaults,noatime,compress=zstd:2,subvol=@snapshots /mnt/.snapshots
-mount -o defaults,noatime,compress=zstd:2,subvol=@swap /mnt/.swap
+mount -o defaults,noatime,compress=zstd:2,subvol=@home /dev/sda2 /mnt/home # Monta a pasta do usuário
+mount -o defaults,noatime,compress=zstd:2,subvol=@var /dev/sda2 /mnt/var
+mount -o defaults,noatime,compress=zstd:2,subvol=@tmp /dev/sda2 /mnt/tmp
+mount -o defaults,noatime,compress=zstd:2,subvol=@snapshots /dev/sda2 /mnt/.snapshots
+mount -o defaults,noatime,compress=zstd:2,subvol=@swap /dev/sda2 /mnt/.swap
 # Se o sistema não for efi mude /mnt/boot/efi para /mnt/boot
 mount /dev/sda1 /mnt/boot/efi
 {{</ highlight >}}
