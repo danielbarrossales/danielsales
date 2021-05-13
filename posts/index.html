@@ -663,6 +663,12 @@
     
     var enableSearch = JSON.parse("true");
     
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
+    
     var enableSearchHighlight = JSON.parse("true");
     
     var searchResultPosition = JSON.parse("null");
@@ -686,12 +692,13 @@
         xhr.onload = function () {
           if (xhr.status === 200) {
             fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
-              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
               includeMatches: enableSearchHighlight,
               shouldSort: true, 
-              threshold: 0.4, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
               location: 0, 
-              distance: 100, 
+              distance: searchDistance ? searchDistance : 100, 
               maxPatternLength: 32,
               minMatchCharLength: 1,
               isCaseSensitive: false, 
@@ -1341,7 +1348,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="All the list of my posts">
 
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.83.1" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1612,14 +1619,14 @@
     
     <div class="summary-classic__image-container summary-classic__image-wrapper" data-position="right" data-hwm="">
       <a href="http://danielsales.com.br/instalacao-arch-linux-com-btrfs/">
-        <img data-src="/images/2021-thumbs/archlinux-installation-with-btrfs.png" alt="Installando Arch Linux com Btrfs" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
+        <img data-src="/images/2021-thumbs/archlinux-installation-with-btrfs.png" alt="Instalando Arch Linux com Btrfs" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" data-ani="true" data-hwm="" style=""/>
       </a>
     </div>
     
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='http://danielsales.com.br/instalacao-arch-linux-com-btrfs/'>Installando Arch Linux com Btrfs</a> </h5>
+        <h5 class="title h5"><a href='http://danielsales.com.br/instalacao-arch-linux-com-btrfs/'>Instalando Arch Linux com Btrfs</a> </h5>
         <h6 class="subtitle caption">
           <time title="Escrito em" dir="ltr">📅&nbsp;08-04-2021 </time>
           
@@ -1693,7 +1700,7 @@
     
         
         <li class="sidebar-recent">
-            <a href="/instalacao-arch-linux-com-btrfs/" class="sidebar-recent__title p1">Installando Arch Linux com Btrfs</a>
+            <a href="/instalacao-arch-linux-com-btrfs/" class="sidebar-recent__title p1">Instalando Arch Linux com Btrfs</a>
         </li>
         
         <hr class="hr-fade sidebar-hr" />

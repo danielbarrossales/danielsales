@@ -13,7 +13,7 @@
     <language>pt-br</language>
     <managingEditor>daniel.b.sales@outlook.com (Daniel B. Sales)</managingEditor>
     <webMaster>daniel.b.sales@outlook.com (Daniel B. Sales)</webMaster>
-    <copyright>©{year}, All Rights Reserved</copyright>
+    <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 26 Mar 2019 08:47:11 +0100</lastBuildDate>
     
         <atom:link href="http://danielsales.com.br/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +21,7 @@
 
       
       <item>
-        <title>Installando Arch Linux com Btrfs</title>
+        <title>Instalando Arch Linux com Btrfs</title>
         <link>http://danielsales.com.br/instalacao-arch-linux-com-btrfs/</link>
         <pubDate>Thu, 08 Apr 2021 11:46:29 -0300</pubDate>
         <author>daniel.b.sales@outlook.com (Daniel B. Sales)</author>
