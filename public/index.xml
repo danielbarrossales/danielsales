@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Daniel Sales</title>
+    <link>https://danielsales.com.br/</link>
+    <description>Recent content on Daniel Sales</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <managingEditor>daniel.b.sales@outlook.com (Daniel B. Sales)</managingEditor>
+    <webMaster>daniel.b.sales@outlook.com (Daniel B. Sales)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 08 Apr 2021 11:46:29 -0300</lastBuildDate>
+    
+        <atom:link href="https://danielsales.com.br/index.xml" rel="self" type="application/rss+xml" />
+    
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      <item>
+        <title>Instalando Arch Linux com Btrfs</title>
+        <link>https://danielsales.com.br/instalacao-arch-linux-com-btrfs/</link>
+        <pubDate>Thu, 08 Apr 2021 11:46:29 -0300</pubDate>
+        <author>daniel.b.sales@outlook.com (Daniel B. Sales)</author>
+        <atom:modified>Thu, 08 Apr 2021 11:46:29 -0300</atom:modified>
+        <guid>https://danielsales.com.br/instalacao-arch-linux-com-btrfs/</guid>
+        <description>&lt;h2 id=&#34;instalação-do-sistema&#34;&gt;Instalação do sistema&lt;/h2&gt;
+&lt;p&gt;Neste tutorial assumo que você já tenha uma mídia de instalação pronta e sabe como inicializar o sistema por ela.&lt;/p&gt;</description>
+        
+        <dc:creator>Daniel B. Sales</dc:creator>
+        <media:content url="https://danielsales.com.br/images/2021-thumbs/archlinux-installation-with-btrfs.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Archlinux</category>
+            
+          
+        
+        
+          
+            
+              <category>Linux</category>
+            
+          
+            
+              <category>Btrfs</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
