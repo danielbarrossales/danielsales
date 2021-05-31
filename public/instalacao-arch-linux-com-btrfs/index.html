@@ -1777,12 +1777,12 @@ mkfs.btrfs /dev/sda2 <span class="c1"># Formate a partição raiz com btrfs</spa
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash">mount /dev/sda2 /mnt <span class="c1"># Monta a partição para podermos criar os subvolumes</span>
-mkfs btrfs subvolume create /mnt/@root <span class="c1"># Criar o subvolume @root</span>
-mkfs btrfs subvolume create /mnt/@home <span class="c1"># Criar o subvolume @home</span>
-mkfs btrfs subvolume create /mnt/@var <span class="c1"># Criar o subvolume @var</span>
-mkfs btrfs subvolume create /mnt/@tmp <span class="c1"># Criar o subvolume @tmp</span>
-mkfs btrfs subvolume create /mnt/@snapshots <span class="c1"># Criar o subvolume @snapshots</span>
-mkfs btrfs subvolume create /mnt/@swap <span class="c1"># Criar o subvolume @swap</span>
+btrfs subvolume create /mnt/@root <span class="c1"># Criar o subvolume @root</span>
+btrfs subvolume create /mnt/@home <span class="c1"># Criar o subvolume @home</span>
+btrfs subvolume create /mnt/@var <span class="c1"># Criar o subvolume @var</span>
+btrfs subvolume create /mnt/@tmp <span class="c1"># Criar o subvolume @tmp</span>
+btrfs subvolume create /mnt/@snapshots <span class="c1"># Criar o subvolume @snapshots</span>
+btrfs subvolume create /mnt/@swap <span class="c1"># Criar o subvolume @swap</span>
 umount /mnt <span class="c1"># Desmonta a partição para podermos utilizar os subvolumes que acabamos de criar</span></code></pre></td></tr></table>
 </div>
 </div></p>

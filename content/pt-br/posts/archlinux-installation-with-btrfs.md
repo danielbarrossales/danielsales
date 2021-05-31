@@ -58,12 +58,12 @@ Uma das principais razões para se utilizar btrfs é a facilidade para fazer o b
 Com os seguintes comandos:
 {{< highlight bash >}}
 mount /dev/sda2 /mnt # Monta a partição para podermos criar os subvolumes
-mkfs btrfs subvolume create /mnt/@root # Criar o subvolume @root
-mkfs btrfs subvolume create /mnt/@home # Criar o subvolume @home
-mkfs btrfs subvolume create /mnt/@var # Criar o subvolume @var
-mkfs btrfs subvolume create /mnt/@tmp # Criar o subvolume @tmp
-mkfs btrfs subvolume create /mnt/@snapshots # Criar o subvolume @snapshots
-mkfs btrfs subvolume create /mnt/@swap # Criar o subvolume @swap
+btrfs subvolume create /mnt/@root # Criar o subvolume @root
+btrfs subvolume create /mnt/@home # Criar o subvolume @home
+btrfs subvolume create /mnt/@var # Criar o subvolume @var
+btrfs subvolume create /mnt/@tmp # Criar o subvolume @tmp
+btrfs subvolume create /mnt/@snapshots # Criar o subvolume @snapshots
+btrfs subvolume create /mnt/@swap # Criar o subvolume @swap
 umount /mnt # Desmonta a partição para podermos utilizar os subvolumes que acabamos de criar
 {{</ highlight >}}
 
