@@ -51,3 +51,21 @@ googleAnalytics = "G-EL8RGKVGH3"
   category = "categories"
   tag = "tags"
   series = "series"
+
+[Languages]
+  [Languages.pt-br]
+  title = "Daniel Sales"
+  languageName = "Português"
+  weight = 1
+  # [Languages.en.params]
+  # linkedin = "english-link"
+
+  [Languages.en-us]
+  # copyright = "Tout est à moi"
+  title = "Daniel Sales"
+  languageName = "English"
+  weight = 2
+  # [Languages.fr.params]
+  # linkedin = "lien-francais"
+  # [Languages.fr.navigation]
+  # help  = "Aide"
