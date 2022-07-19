@@ -2,7 +2,7 @@
 title: "Installing Arch Linux with BTRFS filesystem"
 
 date: 2021-04-08T11:46:29-03:00
-url: instalacao-arch-linux-com-btrfs/
+url: installing-archlinux-with-btrfs/
 image: images/2021-thumbs/archlinux-installation-with-btrfs.png
 categories:
   - Linux
