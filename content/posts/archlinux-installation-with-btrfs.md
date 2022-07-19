@@ -6,9 +6,9 @@ url: instalacao-arch-linux-com-btrfs/
 image: images/2021-thumbs/archlinux-installation-with-btrfs.png
 categories:
   - Linux
-  - Btrfs
 tags:
   - Archlinux
+  - Btrfs
 draft: false
 ---
 ## Instalação do sistema
