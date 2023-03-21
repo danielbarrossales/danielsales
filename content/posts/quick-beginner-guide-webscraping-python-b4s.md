@@ -68,7 +68,7 @@ print(soup.title)
 ```
 
 ## Extrair dados
-Beautiful Soup permite a navegação simples entre os elementos html. Por exemplo, aqui extraimos todos os elementos com tag <a> e exibimos o link HREF dele.
+Beautiful Soup permite a navegação simples entre os elementos html. Por exemplo, aqui extraimos todos os elementos com tag `<a>` e exibimos o link HREF dele.
 ```Python
 # Recupera todos os elementos com tag <a>
 links = soup.find_all("a")

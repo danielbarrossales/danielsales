@@ -68,8 +68,8 @@ soup = BeautifulSoup(response.text, "html.parser")
 print(soup.title)
 ```
 
-## extract data
-Beautiful Soup allows simple navigation between html elements. For example, here we extract all elements with the <a> tag and display their HREF link.
+## Extract data
+Beautiful Soup allows simple navigation between html elements. For example, here we extract all elements with the `<a>` tag and display their HREF link.
 ```Python
 # Retrieve all elements with <a> tag
 links = soup.find_all("a")
