@@ -2,7 +2,7 @@
 title: "Guia Rápido para Web Scraping com Python e Beautiful Soup"
 
 date: 2023-03-20T20:18:06-03:00
-url: /quick-beginner-guide-webscraping-python-b4s/
+url: /guia-rapido-webscraping-com-python-para-iniciantes
 image: /images/2023-thumbs/python.webp
 categories:
   - Networking
