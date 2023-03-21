@@ -5,11 +5,10 @@ date: 2023-03-20T20:18:06-03:00
 url: /quick-beginner-guide-webscraping-python-b4s/
 image: /images/2023-thumbs/python.webp
 categories:
-  - Linux
-  - Windows
   - Networking
+  - Python
 tags:
-  - Ubuntu
+  - Web Scraping
 draft: false
 ---
 
