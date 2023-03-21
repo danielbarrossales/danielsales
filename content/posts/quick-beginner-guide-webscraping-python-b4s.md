@@ -43,7 +43,9 @@ sudo apt install python3-bs4
 sudo apt install python3-requests
 {{</ highlight >}}
 
-## Faça o download da página alvo
+## 1. Faça o download da página alvo
+Para fazer o download do conteúdo da página web, podemos utilizar a biblioteca **requests** como feito abaixo.
+
 {{< highlight python >}}
 import requests
 
@@ -57,6 +59,7 @@ if resposta.status_code != 200:
 {{</ highlight >}}
 
 ## Analise o conteúdo da página com o beautiful soup
+Com o conteúdo HTML da página salvo em uma variável, podemos instanciar o Beuatiful Soup e começar a analisar os dados dela.
 ```Python
 import BeautifulSoup
 
@@ -66,16 +69,17 @@ print(soup.title)
 ```
 
 ## Extrair dados
-
+Beautiful Soup permite a navegação simples entre os elementos html. Por exemplo, aqui extraimos todos os elementos com tag <a> e exibimos o link HREF dele.
 ```Python
 # Recupera todos os elementos com tag <a>
 links = soup.find_all("a")
-Exibe todos os links dos elementos com tag <a>
+# Exibe todos os links dos elementos com tag <a>
 for link in links:
   print(link.get("href"))
 ```
 
 ## Salvar os dados extraídos
+Com os dados extraídos geralmente se salva ele em CSV ou em alguma base de dados. No exemplo abaixo salvamos os links extraidos em um arquivo CSV usando a biblioteca **csv** imbutida no python.
 ```Python
 import csv
 
