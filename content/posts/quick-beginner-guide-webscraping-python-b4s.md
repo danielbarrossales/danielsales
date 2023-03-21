@@ -13,42 +13,37 @@ tags:
 draft: false
 ---
 
-### Introdução
-Em decorrência da grande quantidade de dados (em sua grande maioria desestruturado) disponível publicamente na internet, web scraping é uma 
-ferramenta necessária para qualquer desenvolvedor que trabalha com extração de dados.
-
-Neste tutorial introduzimos brevemente o conceito de web scraping, e demonstraremos como pode ser aplicado com Python e a biblioteca Beautiful
-Soup.
+## Introdução
+Em decorrência da grande quantidade de dados (em sua grande maioria desestruturado) disponível publicamente na internet, web scraping é uma ferramenta necessária para qualquer desenvolvedor que trabalha com extração de dados.
+<!--more-->
+Neste tutorial introduzimos brevemente o conceito de web scraping, e demonstraremos como pode ser aplicado com Python e a biblioteca Beautiful Soup.
 
 Ao fim deste tutorial você terá um conhecimento básico sobre web scraping e como aplicá-lo com python e beautiful soup.
 
-### O que é Web Scraping
-Web Scraping é o processo/técnica para extrair dados de websites. Esta técnica é amplamente utilizada em análise e mineração de dados. Geralmente,
+## O que é Web Scraping
+Web Scraping é o processo/técnica para extrair dados de websites. Esta técnica é amplamente utilizada em análise e mineração de dados. Geralmente, ferramentas de webs craping proveem funcionalidade para automatizar a coleta de dados, permitindo fácil análise e navegação dos componentes do website.
 
-ferramentas de webs craping proveem funcionalidade para automatizar a coleta de dados, permitindo fácil análise e navegação dos componentes do website.
-
-### Pré-requisitos
+## Pré-requisitos
 * Conhecimento Básico da linha de comando do seu sistema operacional
 * Conhecimento Básico de Python
 * Familiaridade estrutura de um documento HTML
 
-### Instalando Dependências
+## Instalando Dependências
 Antes de começar precisamos instalar as dependências:
-#### Utilizando pip
+### Utilizando pip
 PIP é o gerenciador de pacotes padrão de Python. Para instalar as dependências utilizando o pip utilize os comandos abaixo:
 {{< highlight bash >}}
 pip install requests beautifulsoup4
 {{</ highlight >}}
-#### Utilizando o gerenciador de pacotes (Ubuntu e distribuições baseadas em ubuntu)
-Apesar de instalar pacotes no sistema como um todo seja possível, prefira instalar em ambientes virtuais (utilizando virtualenv, por exemplo) para isolar
-dependências de cada projeto.
+### Utilizando o gerenciador de pacotes (Ubuntu e distribuições baseadas em ubuntu)
+Apesar de instalar pacotes no sistema como um todo seja possível, prefira instalar em ambientes virtuais (utilizando virtualenv, por exemplo) para isolar dependências de cada projeto.
 
 {{< highlight bash >}}
 sudo apt install python3-bs4
 sudo apt install python3-requests
 {{</ highlight >}}
 
-### Faça o download da página alvo
+## Faça o download da página alvo
 {{< highlight python >}}
 import requests
 
@@ -61,7 +56,7 @@ if resposta.status_code != 200:
   return
 {{</ highlight >}}
 
-### Analise o conteúdo da página com o beautiful soup
+## Analise o conteúdo da página com o beautiful soup
 ```Python
 import BeautifulSoup
 
@@ -70,7 +65,7 @@ soup = BeautifulSoup(resposta.text, "html.parser")
 print(soup.title)
 ```
 
-### Extrair dados
+## Extrair dados
 
 ```Python
 # Recupera todos os elementos com tag <a>
@@ -80,7 +75,7 @@ for link in links:
   print(link.get("href"))
 ```
 
-### Salvar os dados extraídos
+## Salvar os dados extraídos
 ```Python
 import csv
 
@@ -90,9 +85,8 @@ with open('links.csv', 'w') as csvfile:
     writer.writerow([link.get("href")])
 ```
 
-### Conclusão
-Aqui brevemente introduzimos o conceito de web scraping e demonstramos como é possível ser feito em Python com a biblioteca Beautiful Soup. Com este conhecimento você pode começar
-a se aprofundar e explorar melhor a biblioteca para se preparar para explorar e analisar a quantidade enorme de dados disponíveis na internet.
+## Conclusão
+Aqui brevemente introduzimos o conceito de web scraping e demonstramos como é possível ser feito em Python com a biblioteca Beautiful Soup. Com este conhecimento você pode começar a se aprofundar e explorar melhor a biblioteca para se preparar para explorar e analisar a quantidade enorme de dados disponíveis na internet.
 
 ### Credits
 Post thumbnail: <a href="https://www.vecteezy.com/free-png/3d">3d PNGs by Vecteezy</a>
