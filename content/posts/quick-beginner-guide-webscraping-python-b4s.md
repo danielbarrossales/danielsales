@@ -3,7 +3,7 @@ title: "Guia Rápido para Web Scraping com Python e Beautiful Soup"
 
 date: 2023-03-20T20:18:06-03:00
 url: /quick-beginner-guide-webscraping-python-b4s/
-image: /images/2020-thumbs/quick-beginner-guide-webscraping-python-b4s.jpg
+image: /images/2023-thumbs/python.webp
 categories:
   - Linux
   - Windows
@@ -93,3 +93,6 @@ with open('links.csv', 'w') as csvfile:
 ### Conclusão
 Aqui brevemente introduzimos o conceito de web scraping e demonstramos como é possível ser feito em Python com a biblioteca Beautiful Soup. Com este conhecimento você pode começar
 a se aprofundar e explorar melhor a biblioteca para se preparar para explorar e analisar a quantidade enorme de dados disponíveis na internet.
+
+### Credits
+Post thumbnail: <a href="https://www.vecteezy.com/free-png/3d">3d PNGs by Vecteezy</a>
